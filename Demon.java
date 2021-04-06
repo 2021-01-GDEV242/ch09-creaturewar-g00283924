@@ -7,19 +7,40 @@
  */
 public class Demon extends Creature
 {
-    private static final int MAX_DEMON_HP = 35;
-    private static final int MIN_DEMON_HP = 5;
-    private static final int MAX_DEMON_STR = 25;
-    private static final int MIN_DEMON_STR = 10;
-
+    private int str;        // The strength of this creature
+    private int max_hp;     // The maximum hit points the creature can have (used if healing enabled)
+    private int hp;  
     /**
      * Constructor for objects of class Demon
      */
     public Demon()
     {
-        super(
-            Randomizer.nextInt(MAX_DEMON_HP-MIN_DEMON_HP)+MIN_DEMON_HP,    
-            Randomizer.nextInt(MAX_DEMON_STR-MIN_DEMON_STR)+MIN_DEMON_STR
-        );
+        str=10;
+        hp=10;
+        max_hp = hp;
+    
+    }
+    
+    public Demon (int str, int hp) {
+       //implement this
+    }
+    
+    public int attack(){
+        // TODO: implement a damage method
+        return 0;
+    }
+    
+    public boolean isAlive() {
+        // TODO: implement a method to report if the creature yet lives
+        return false; //change this
+    }
+    
+    public boolean isKnockedOut() {
+        //TODO: implement a method to report if the creature has been killed
+        return false; //change this
+    }
+    
+    public void takeDamage(int damage) {
+        // TODO: implement this
     }
 }

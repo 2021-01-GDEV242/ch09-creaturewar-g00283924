@@ -5,12 +5,12 @@
  * @author (your name)
  * @version (a version number or a date)
  */
-public class Balrog extends Creature
+public class Balrog extends Demon
 {
-    private static final int MAX_BALROG_HP = 25;
-    private static final int MIN_BALROG_HP = 10;
-    private static final int MAX_BALROG_STR = 20;
-    private static final int MIN_BALROG_STR = 10;
+    private static final int MAX_BALROG_HP = 200;
+    private static final int MIN_BALROG_HP = 80;
+    private static final int MAX_BALROG_STR = 100;
+    private static final int MIN_BALROG_STR = 50;
 
     /**
      * Constructor for objects of class Balrog
